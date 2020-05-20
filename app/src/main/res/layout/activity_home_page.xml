@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#dfe6e9"
+    tools:context=".homePage" >
+
+
+    <LinearLayout
+        android:padding="4dp"
+        android:gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:theme="@style/search"
+            android:textAlignment="center"
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:iconifiedByDefault="false" />
+
+        <ImageButton
+            android:onClick="expand"
+            android:id="@+id/colpsBtn"
+            android:layout_width="50sp"
+            android:layout_height="40sp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/colapsmin"
+            android:tint="#FFF" />
+     </LinearLayout>
+
+    <ExpandableListView
+        android:animateLayoutChanges="true"
+        android:id="@+id/expandableList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </ExpandableListView>
+</LinearLayout>

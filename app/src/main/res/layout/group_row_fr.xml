@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:fontFamily="@font/robotobold"
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:gravity="left|center"
+        android:layout_height="80dp"
+        android:text="TEST"
+        android:paddingLeft="35sp"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:background="@color/color3"
+        android:textStyle="bold" />
+
+</LinearLayout>
